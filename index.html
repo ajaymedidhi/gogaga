@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/ajaymedidhi7/image/upload/v1723828522/2d34e5_b534244efca647acba1d5e4aaeb2e613_mv2_nsftm5.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">
+                        Packages
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#exploreMenuSection" id="navItem2">Tours</a>
+                    <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Help</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Membership</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Gift cards</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mt-3">Discover Your Next Adventure</h1>
+            <p class="banner-caption mb-3">Unlock your path to adventure, start your journey of discovery - where every destination awaits your exploration</p>
+        </div>
+        <div class="container mt-4 p-4 bg-white shadow rounded">
+            <div class="row mb-1">
+                <div class="col-md-3 col-6">
+                    <button class="btn btn-dark btn-block active">Packages</button>
+                </div>
+                <div class="col-md-3 col-6">
+                    <button class="btn btn-light btn-block">Tours</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Destination -->
+                <div class="col-md-3 col-12 mb-3">
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" class="form-control" placeholder="Enter the City">
+                    </div>
+                </div>
+
+                <!-- Check-in -->
+                <div class="col-md-3 col-12 mb-3">
+                    <div class="form-group">
+                        <label for="checkin">Check-in</label>
+                        <input type="date" id="checkin" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Check-out -->
+                <div class="col-md-3 col-12 mb-3">
+                    <div class="form-group">
+                        <label for="checkout">Check-out</label>
+                        <input type="date" id="checkout" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Guests and Rooms -->
+                <div class="col-md-3 col-12 mb-3">
+                    <div class="form-group">
+                        <label for="guests-rooms">Guests and Rooms</label>
+                        <select id="guests-rooms" class="form-control">
+                            <option>2 adults, 0 children, 1 room</option>
+                            <option>1 adult, 0 children, 1 room</option>
+                            <option>3 adults, 1 child, 2 rooms</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Search Button -->
+                <div class="col-md-2 col-12 mb-3">
+                    <button class="btn btn-dark btn-block mt-4">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="wcu-section pt-5 pb-5" id="wcuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-section-heading">Our Best Packages</h1>
+                    <p class="wcu-section-description">
+                        Handpicked travel packages for every kind of explorer.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/ajaymedidhi7/image/upload/v1723876133/beautiful-tropical-beach-view-with-palm-tree-sunbeds-umbrella_1110958-18049_c9zfnk.avif" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Beach Getaway</h1>
+                        <p class="wcu-card-description">
+                            Soak up the sun and relax on pristine beaches with our exclusive beach vacation packages.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Mountain Adventure</h1>
+                        <p class="wcu-card-description">
+                            Explore rugged terrains and majestic peaks with guided tours for adventure enthusiasts.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/ajaymedidhi7/image/upload/v1723876837/download_oilntn.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Cultural Tour</h1>
+                        <p class="wcu-card-description">
+                            Dive into rich cultures and traditions with immersive experiences across the globe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Explore Tours</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/aerial-view-shanghai-overpass-night_1359-36.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">City Highlights</h1>
+                        <a href="" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/premium-photo/nature_943629-35092.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Nature Trails</h1>
+                        <a href="" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/architecture-ancient-monument-world-heritage-day-celebration_23-2151297197.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Historical Wonders</h1>
+                        <a href="" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/tropical-nature-summer-resort-sky_1203-4501.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Luxury Escapes</h1>
+                        <a href="" class="menu-item-link">
+                            View All
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="healthy-food-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="section-heading">Help & Support</h1>
+                    <p class="section-description">We’re here to assist you at every step of your journey. Reach out for any help you need.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery-and-payment-section pt-5 pb-5" id="deliveryPaymentSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="section-heading">Exclusive Membership</h1>
+                    <p class="section-description">Unlock premium perks and enjoy special privileges with our membership program.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://res.cloudinary.com/ajaymedidhi7/image/upload/v1723828522/2d34e5_b534244efca647acba1d5e4aaeb2e613_mv2_nsftm5.png" class="food-munch-logo" />
+                    <h1 class="footer-section-mail-id">travelnow@gogagaholidays.com</h1>
+                    <p class="footer-section-address">
+                        Begumpet,Hyderabad, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
